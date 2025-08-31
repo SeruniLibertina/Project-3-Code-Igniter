@@ -1,68 +1,45 @@
-# CodeIgniter 4 Application Starter
+# Project3_Mission2
+# Proyek 3: Aplikasi CRUD Sederhana
 
-## What is CodeIgniter?
+Repositori ini berisi dua proyek untuk memenuhi tugas ke-3, yaitu aplikasi **CRUD (Create, Read, Update, Delete)** sederhana. Proyek pertama dibangun menggunakan **PHP native**, dan dikembangkan dengan *framework* **CodeIgniter 4**.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## Deskripsi Proyek
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+Tujuan dari proyek ini adalah untuk menerapkan fungsionalitas dasar CRUD pada sebuah data (misalnya, data mahasiswa, data buku, atau data produk). Kedua aplikasi ini memiliki fitur yang sama namun dengan implementasi yang berbeda untuk menunjukkan perbandingan antara pengembangan menggunakan PHP natif dan *framework* CodeIgniter 4.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## Fitur Utama
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+  * **Create**: Menambahkan data baru ke dalam database.
+  * **Read**: Menampilkan daftar data yang ada di database.
+  * **Update**: Mengubah atau memperbarui data yang sudah ada.
+  * **Delete**: Menghapus data dari database.
+  * **Search**: Mencari data menggunakan keyword.
 
-## Installation & updates
+## Proyek 3: CRUD dengan PHP Natif
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+Folder: `PHP Native`
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+Aplikasi ini dibuat murni dengan menggunakan bahasa pemrograman PHP tanpa bantuan *framework* apa pun. Interaksi dengan database menggunakan ekstensi **MySQLi** atau **PDO**.
 
-## Setup
+### Prasyarat
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+  * Web server
+  * PHP 7.4 atau lebih tinggi
+  * Database MySQL
+    
+## Proyek 3: CRUD dengan CodeIgniter 4
 
-## Important Change with index.php
+Folder: `CodeIgniter`
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+Aplikasi ini dibangun menggunakan *framework* PHP modern, CodeIgniter 4, yang mengimplementasikan pola desain **MVC (Model-View-Controller)**.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## Teknologi yang Digunakan
 
-**Please** read the user guide for a better explanation of how CI4 works!
+  * **Backend**: PHP
+  * **Frontend**: HTML, CSS 
+  * **Database**: MySQL 
+  * **Framework (Proyek 2)**: CodeIgniter 4
 
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> The end of life date for PHP 7.4 was November 28, 2022.
-> The end of life date for PHP 8.0 was November 26, 2023.
-> If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> The end of life date for PHP 8.1 will be November 25, 2024.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+## Referensi
+  * https://www.codekop.com/read/tutorial-crud-codeigniter-4-lengkap-untuk-pemula-60.html
+  * https://www.petanikode.com/codeigniter4-migration/
